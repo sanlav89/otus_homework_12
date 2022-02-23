@@ -1,1 +1,2 @@
 build/*
+train/fashion-mnist_train.csv
