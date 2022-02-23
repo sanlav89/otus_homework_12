@@ -10,7 +10,7 @@ $ git clone https://github.com/sanlav89/otus_homework_12
 $ cd ./otus_homework_12  
 $ cmake -B build  
 $ cmake --build build  
-$ ./build/bin/fashion_demo ./train/test.csv  
+$ ./build/bin/fashion_demo ./train/test.csv ./train/saved_model  
 0.909  
 ```  
 ## Запуск unit-тестов  

@@ -9,14 +9,14 @@ using namespace fashion;
 
 int main(int argc, char *argv[])
 {
-    assert(argc == 2);
+    assert(argc == 3);
     
     // Disable Tensorflow logging
     char var[] = "TF_CPP_MIN_LOG_LEVEL=3";
     putenv(var);
     
     // Load Tensrflow model
-    auto clf = FashionClassifier{"train/saved_model", 28, 28};
+    auto clf = FashionClassifier{argv[2], 28, 28};
     
     // Load test data
     auto features = FashionClassifier::features_t{};
